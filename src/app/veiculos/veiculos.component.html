@@ -1,0 +1,12 @@
+<input type="text" formControlName="placa" placeholder="Informe a placa que deseja consultar" style="height: 30px; width: 230px;">
+<button type="submit" (click)="listarDados()" style="height: 34px; width: 80px;">Consultar</button>
+<br>
+<br>
+<br>
+<h1>Dados da consulta</h1>
+<label>Placa </label><input type="text" formControlName="placa" disabled="true" *ngFor="let cons of consulta" value="{{cons.id}}" style="height: 30px; width: 230px;"><br>
+<label>Chassi </label><input type="text" formControlName="chassi" disabled="true" *ngFor="let cons of consulta" value="{{cons.chassi}}" style="height: 30px; width: 230px;"><br>
+<label>Renavam </label><input type="text" formControlName="renavam" disabled="true" *ngFor="let cons of consulta" value="{{cons.renavem}}" style="height: 30px; width: 230px;"><br>
+<label>Modelo </label><input type="text" formControlName="modelo" disabled="true" *ngFor="let cons of consulta" value="{{cons.modelo}}" style="height: 30px; width: 230px;"><br>
+<label>Marca </label><input type="text" formControlName="marca" disabled="true" *ngFor="let cons of consulta" value="{{cons.marca}}" style="height: 30px; width: 230px;"><br>
+<label>Ano </label><input type="text" formControlName="ano" disabled="true" *ngFor="let cons of consulta" value="{{cons.ano}}"  style="height: 30px; width: 35px;">
